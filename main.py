@@ -45,6 +45,10 @@ def main():
                 print("Game over!")
                 pygame.quit()
                 exit()
+            
+            for s in shots:
+                if a.collides_with(s):
+                    a.split()
 
         pygame.display.flip()
 
